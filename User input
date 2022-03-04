@@ -1,0 +1,30 @@
+import java.util.Scanner;
+// Importing object "Scanner" from Java premade package java.util   
+
+class test
+// Creating class and naming it "test" 
+{
+	public static void main(String[] args)
+	// Default beginning of any Java based program.
+	{
+	Scanner sc = new Scanner(System.in); 
+	/* Declaring new "Scanner" object 
+	 * with name "sc" that uses System.in object
+	 * that can read user input - commonly from keyboard.
+	 */
+
+	String st = sc.nextLine();
+	/* Declaring "String" with name "st" 
+	 * that is equel to user input that 
+	 * "sc" named Scanner will get.
+	 */
+	
+	/* No output will occur if we'll run code above.
+	 * To have output we must "ask" program to do so
+	 * by entering next line. 
+	 */
+	
+	System.out.println(st); 
+	// Printing the "st" named String what we declared above.
+	}
+}
