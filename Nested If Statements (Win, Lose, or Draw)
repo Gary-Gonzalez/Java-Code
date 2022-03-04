@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Main {
+   public static void main(String[] args) {
+       Scanner read = new Scanner(System.in);
+       boolean isSuspended = read.nextBoolean();
+       int ourScore = read.nextInt();
+       int theirScore = read.nextInt();
+       
+       if(isSuspended==true)
+       {
+       	System.out.println("Suspended");
+       }
+       if(isSuspended==false && ourScore>theirScore)
+       {
+       	System.out.println("Won");
+       }
+       else if(isSuspended==false && theirScore>ourScore)
+       {
+       	System.out.println("Lost");
+       }
+       else if(ourScore==theirScore)
+       {
+       	System.out.println("Draw");
+       }
+   }
+}
